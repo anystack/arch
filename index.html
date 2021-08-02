@@ -5,12 +5,25 @@
     <title>Arch Company</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" href="//arch.company/images/logo.png">
     <link rel="shortcut icon" href="//arch.company/images/logo.png" type="image/x-icon">
     <style type="text/css">
-        h2{display:flex;align-items: center;font-family: 'Teko', sans-serif;}
-        h2>span{font-size: 2rem;margin-left: 10px;}
+        @keyframes ran {
+            from {
+                backgroud-position: 0 0;
+            }
+            to {
+                background-position: 1000px 0;
+            }
+        }
+        body{display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;}
+        h2{display:flex;align-items: center;font-family: 'Libre Baskerville', sans-serif;}
+        h2>span{font-size: 42px;margin-left: 24px; background: linear-gradient(45deg,#00a0e9,#10d39d,#00a0e9,#10d39d,#00a0e9);  color:transparent; -webkit-background-clip: text;animation: ran 10s linear infinite; }
     </style>
 </head>
 <body>
