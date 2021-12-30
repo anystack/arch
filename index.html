@@ -17,26 +17,38 @@
                 background-position: 1000px 0;
             }
         }
-        html,body{margin: 0;}
+        html,body{margin: 0;background-color: #131a43;}
         body{display:flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
             justify-content: center;
             font-family: 'Libre Baskerville', sans-serif;
             min-height: 100vh;}
         h2{flex-direction: row; display:flex;align-items: center;}
-        h2>span{font-size: 6vw;margin-top: 4vw; color: #655; }
+        h2>span{font-size: 6vw;margin-top: 4vw; color: #ccf; }
         h2>span>i{font-size: 6vw;font-style: normal;margin-top: 4vw; color: gray; }
-        footer{font-size: 1vw; color:gray; margin-top: 30vh;position: absolute;bottom: -5vh;height: 5vh;}
+        footer{font-size: 1vw; color:gray; margin-top: 30vh;position: absolute;bottom: -5vh;height: 5vh;line-height: 5vh}
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
 </head>
 <body>
-    <h2>
-        <img src="images/logo.png" width="200vw" />
+    <h2 id="header">
+        <img src="images/logo.png" width="200vw" id="logo" />
         <span>arch<i>Company</i></span>
     </h2>
     <footer>
         &copy;Copyright Arch Company 2022; All rights reserved
     </footer>
+    <script type="application/javascript">
+        VANTA.HALO({
+          el: "body",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00
+        });
+    </script>
 </body>
 </html>
