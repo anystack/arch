@@ -19,7 +19,7 @@
   </defs>
   <g id="" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none" stroke="none" fill="none">
     <g>
-      <rect x="0" y="0" width="500" height="500" fill="url(#bg)" mask="url(#arch)"/>
+      <rect x="0" y="0" rx="30" ry="30" width="500" height="500" fill="url(#bg)" mask="url(#arch)"/>
     </g>
   </g>
 </svg>
