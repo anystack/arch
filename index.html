@@ -16,7 +16,7 @@
             justify-content: center;
             font-family: 'Cairo', sans-serif;
             min-height: 100vh;}
-        #logo{width: 10vw;border-radius: 1vw;}
+        #logo{width: 10vw;border-radius: 1vw;height: 10vw;}
         h2{flex-direction: row; display:flex;align-items: center;font-family: "Titillium Web"; padding-bottom: 20vh;font-weight: normal;}
         h2>span{font-size: 6vw;
             margin-top: 1vw;
@@ -34,7 +34,10 @@
 </head>
 <body>
     <h2 id="header">
-        <img src="images/logo.svg" id="logo" alt="arch" />
+        <!--
+        <img src="images/logo.svgz" id="logo" alt="arch" width="2000" height="2000"/>
+        -->
+        <embed type="image/svg+xml" src="images/logo.svg" id="logo" />
         <span>Arch<i>Company</i></span>
     </h2>
     <footer>
